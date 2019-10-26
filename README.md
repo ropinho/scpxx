@@ -1,4 +1,5 @@
-# orlib
+# ORLib
+
 A simple C++ library for reading computer science problem instances made available in OR-Library.
 
 ## Installing
@@ -53,4 +54,13 @@ int main() {
 
     return 0;
 }
+```
+
+`[Out]`
+```
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
 ```
