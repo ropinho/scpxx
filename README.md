@@ -39,19 +39,18 @@ Example using matrix class for set covering problem:
 ```c++
 #include <iostream>
 #include <orlib/scp/matrix.h>
-#include <orlib/scp/filereader.h>
 
 using namespace ORLib;
 
 int main() {
-	scp::Matrix matrix(5,5);
-	
-	for (int i = 0; i < matrix.num_rows(); i++) {
-		for (int j = 0; j < matrix.num_columns(); j++)
-			std::cout << matrix[i][j] << " ";
-		std::cout << std::endl;
-	}
+    scp::Matrix matrix(5,5);
 
-	return 0;
+    for (int i = 0; i < matrix.num_rows(); i++) {
+        for (int j = 0; j < matrix.num_columns(); j++)
+            std::cout << matrix[i][j] << " ";
+        std::cout << std::endl;
+    }
+
+    return 0;
 }
 ```
