@@ -5,7 +5,7 @@
 #include <fstream>
 #include <sstream>
 #include <string>
-#include "matrix.hpp"
+#include "matrix.h"
 
 namespace ORLib {
 
