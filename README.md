@@ -1,6 +1,27 @@
 # orlib
 A simple C++ library for reading computer science problem instances made available in OR-Library.
 
+## Installing
+
+The installation uses CMake to build the library.
+
+Clone this repository, in command line, access the project directory.
+Create a folder to files generating by cmake.
+
+```
+$ mkdir build && cd build
+```
+
+Uses make to install locally the headers.
+In build directory, types
+
+```
+$ cmake ..
+$ sudo make install
+```
+
+The files are placed in `/usr/local/include/orlib`.
+
 ## List of problems
 
 Follwoing problems existing in [OR-Library]() that can be readed here are:
@@ -25,7 +46,11 @@ using namespace ORLib;
 int main() {
 	scp::Matrix matrix(5,5);
 	
-	
+	for (int i = 0; i < matrix.num_rows(); i++) {
+		for (int j = 0; j < matrix.num_columns(); j++)
+			std::cout << matrix[i][j] << " ";
+		std::cout << std::endl;
+	}
 
 	return 0;
 }
