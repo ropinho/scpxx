@@ -16,3 +16,4 @@ test-*
 
 # Vscode 
 *.vscode/*
+build/
