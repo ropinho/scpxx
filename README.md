@@ -13,7 +13,20 @@ Follwoing problems existing in [OR-Library]() that can be readed here are:
 
 ## Usage example
 
+Example using matrix class for set covering problem:
+
 ```c++
-scp::Matrix m;
-scp::FileReader rdr();
+#include <iostream>
+#include <orlib/scp/matrix.h>
+#include <orlib/scp/filereader.h>
+
+using namespace ORLib;
+
+int main() {
+	scp::Matrix matrix(5,5);
+	
+	
+
+	return 0;
+}
 ```
