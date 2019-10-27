@@ -1,0 +1,11 @@
+image: gcc
+
+language: cpp
+
+before_script:
+  - sudo apt-get install cmake build-essentials gcc
+
+script:
+  - mkdir build && cd build
+  - cmake ..
+  - sudo make install
