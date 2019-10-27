@@ -5,8 +5,10 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install -q gcc
   - sudo apt-get install -y cmake build-essential libbz2-dev
+  - alias g++='g++ -std=c++11'
 
 install:
+  # Installing doctest framework from source
   - git clone https://github.com/onqtam/doctest.git
   - cd doctest
   - mkdir build && cd build
@@ -14,6 +16,7 @@ install:
   - sudo make
   - sudo make install
   - cd ../../
+
 
 script:
   - mkdir build && cd build
