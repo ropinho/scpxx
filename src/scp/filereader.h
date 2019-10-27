@@ -18,6 +18,8 @@ namespace ORLib {
 
             // Constructor
             FileReader () {};
+
+            // Destructor
             ~FileReader() {};
 
             /** Gets a string and separe through a separator __sep and returns into a
@@ -55,14 +57,14 @@ namespace ORLib {
                 if (!_file.is_open())
                     throw std::runtime_error("File not open");
             
-                // Ler primeira linha
+                // Read first row
                 string line;
                 getline(_file, line);
                 vector<int> vecInts = split(line, ' ');
                 numRows = vecInts[0];
                 numColumns = vecInts[1];
 
-                // Ler custos das colunas
+                // Read costs of columns
                 while (getline(_file, line)) {
                     buffer << line;
                 }

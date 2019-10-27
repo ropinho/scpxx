@@ -6,6 +6,15 @@ before_install:
   - sudo apt-get install -q gcc
   - sudo apt-get install -y cmake build-essential libbz2-dev
 
+install:
+  - git clone https://github.com/onqtam/doctest.git
+  - cd doctest
+  - mkdir build && cd build
+  - cmake ..
+  - sudo make
+  - sudo make install
+  - cd ../../
+
 script:
   - mkdir build && cd build
   - cmake ..
