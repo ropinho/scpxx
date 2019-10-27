@@ -1,6 +1,10 @@
 # ORLib
 
-A simple C++ library for reading computer science problem instances made available in OR-Library.
+![build](https://travis-ci.org/pinho/orlib.svg?branch=master)
+
+A simple C++ library for reading computer science problem instances made
+available in [OR-Library](http://people.brunel.ac.uk/~mastjjb/jeb/info.html).
+
 
 ## Installing
 
@@ -23,9 +27,12 @@ $ sudo make install
 
 The files are placed in `/usr/local/include/orlib`.
 
+
 ## List of problems
 
-Follwoing problems existing in [OR-Library]() that can be readed here are:
+Follwoing problems existing in
+[OR-Library](http://people.brunel.ac.uk/~mastjjb/jeb/info.html)
+that can be readed here are:
 
 - [X] Set covering problem (SCP)
 - [ ] Multidimensional Knapsack problem
@@ -64,3 +71,7 @@ int main() {
 0 0 0 0 0 
 0 0 0 0 0 
 ```
+
+## License
+
+[LICENSE](https://opensource.org/licenses/MIT)
