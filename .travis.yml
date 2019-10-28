@@ -1,6 +1,10 @@
 language: cpp
 compiler: gcc
 
+stages:
+  - install
+  - test
+
 addons:
   apt:
     update: true
@@ -10,7 +14,16 @@ addons:
       - build-essential
       - libbz2-dev
 
-script:
-  - mkdir build && cd build
-  - cmake ..
-  - sudo make install
+jobs:
+  include:
+    - stage: install
+      script:
+        - mkdir build && cd build
+        - cmake ..
+        - sudo make install
+        
+    - stage: test
+      script:
+        - cd test
+        - g++ -c main.cpp test*.cpp && g++ main.o test*.o -o run-tests
+        - ./run-tests
