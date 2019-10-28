@@ -1,6 +1,6 @@
 # Ignored files
 
-# Files used to test the implementations
+# Files used to implementations tests
 test.cpp
 
 # Object and precompiled files
