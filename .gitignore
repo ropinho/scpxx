@@ -7,6 +7,9 @@
 *.out
 *.exe
 
+# Test directory
+test/*.o
+
 # Vscode 
 *.vscode/*
 build/
