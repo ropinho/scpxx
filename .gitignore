@@ -3,11 +3,6 @@
 # Files used to test the implementations
 test.cpp
 
-# Tests directory
-tests/*.[o|a]
-tests/*compile*
-tests/*.sh
-
 # Object and precompiled files
 *.[a|o]
 test-*.cpp
