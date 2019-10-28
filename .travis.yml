@@ -1,21 +1,24 @@
-language: cpp
+dist: bionic
+
+language: c++
 compiler: gcc
 
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install -q gcc
-  - alias g++='g++ -std=c++11'
-  
-  - sudo apt-get install -y cmake build-essential libbz2-dev
+addons:
+  apt:
+    packages:
+      update: true
+      - gcc
+      - cmake
+      - build-essential
+      - libbz2-dev
 
+before_script:
   # Installing doctest framework from source
   - git clone https://github.com/onqtam/doctest.git
   - cd doctest && mkdir build && cd build
   - cmake ..
   - sudo make
   - sudo make install
-  - cd ../../
-
 
 script:
   - mkdir build && cd build
