@@ -10,14 +10,6 @@ addons:
       - build-essential
       - libbz2-dev
 
-before_script:
-  # Installing doctest framework from source
-  - git clone https://github.com/onqtam/doctest.git
-  - cd doctest && mkdir build && cd build
-  - cmake ..
-  - sudo make
-  - sudo make install
-
 script:
   - mkdir build && cd build
   - cmake ..
