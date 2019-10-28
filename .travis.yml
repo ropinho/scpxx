@@ -1,12 +1,10 @@
-dist: bionic
-
-language: c++
+language: cpp
 compiler: gcc
 
 addons:
   apt:
+    update: true
     packages:
-      update: true
       - gcc
       - cmake
       - build-essential
