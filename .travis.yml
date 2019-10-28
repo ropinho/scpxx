@@ -1,6 +1,9 @@
 language: cpp
 compiler: gcc
 
+notifications:
+	email: false
+
 stages:
   - install
   - test
