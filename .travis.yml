@@ -21,9 +21,10 @@ jobs:
         - mkdir build && cd build
         - cmake ..
         - sudo make install
-        
+
     - stage: test
       script:
         - cd test
-        - g++ -c main.cpp test*.cpp && g++ main.o test*.o -o run-tests
+        - g++ -std=c++11 -c main.cpp test*.cpp
+        - g++ -std=c++11 main.o test*.o -o run-tests
         - ./run-tests
