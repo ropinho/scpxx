@@ -74,4 +74,4 @@ int main() {
 
 ## License
 
-[LICENSE](https://opensource.org/licenses/MIT)
+[MIT](https://opensource.org/licenses/MIT)

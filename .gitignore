@@ -1,18 +1,11 @@
 # Ignored files
 
-# Files used to implementations tests
-test.cpp
-
 # Object and precompiled files
 *.[a|o]
-test-*.cpp
-test-*.cc
 
 # Executables
 *.out
 *.exe
-t-*
-test-*
 
 # Vscode 
 *.vscode/*
