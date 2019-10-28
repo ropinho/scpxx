@@ -1,6 +1,6 @@
 # ORLib
 
-![build](https://travis-ci.org/pinho/orlib.svg?branch=master)
+[![build](https://travis-ci.org/pinho/orlib.svg?branch=master)](https://travis-ci.org/pinho/orlib)
 
 A simple C++ library for reading computer science problem instances made
 available in [OR-Library](http://people.brunel.ac.uk/~mastjjb/jeb/info.html).
