@@ -2,13 +2,13 @@
 
 [![build](https://travis-ci.org/pinho/orlib.svg?branch=master)](https://travis-ci.org/pinho/orlib)
 
-A simple C++ library for reading computer science problem instances made
+A simple C++ library for reading computer science problems instances made
 available in [OR-Library](http://people.brunel.ac.uk/~mastjjb/jeb/info.html).
 
 
 ## Installing
 
-The installation uses CMake to build the library.
+The installation require CMake to generate build files of the library.
 
 Clone this repository, in command line, access the project directory.
 Create a folder to files generating by cmake.
@@ -25,18 +25,18 @@ $ cmake ..
 $ sudo make install
 ```
 
-The files are placed in `/usr/local/include/orlib`.
+By default, the files are placed in `/usr/local/include/orlib`.
 
 
 ## List of problems
 
-Follwoing problems existing in
+Following problems existing in
 [OR-Library](http://people.brunel.ac.uk/~mastjjb/jeb/info.html)
 that can be readed here are:
 
 - [X] Set covering problem (SCP)
-- [ ] Multidimensional Knapsack problem
 - [ ] Knapsacking Problem
+- [ ] Multidimensional Knapsack problem
 - [ ] Travelling Salesman Problem (TSP)
 - [ ] Steiner forest
 
