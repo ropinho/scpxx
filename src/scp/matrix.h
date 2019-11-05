@@ -18,7 +18,7 @@ namespace ORLib {
 			using std::vector<std::vector<bool>>::end;
 
 			// Constructor
-			Matrix (unsigned int _nrows, unsigned int _ncolumns)
+			Matrix (unsigned int _nrows = 0, unsigned int _ncolumns = 0)
 			: std::vector<std::vector<bool>>(_nrows, std::vector<bool>(_ncolumns,0)),
 			  numRows(_nrows), numColumns(_ncolumns),
               vecOfCosts(std::vector<int>(_ncolumns))
