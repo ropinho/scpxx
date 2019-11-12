@@ -13,3 +13,4 @@ test/*.o
 # Vscode 
 *.vscode/*
 build/
+data/
