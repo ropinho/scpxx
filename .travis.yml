@@ -4,6 +4,11 @@ compiler: gcc
 notifications:
 	email: false
 
+branches:
+  only:
+    - master
+    - dev
+
 stages:
   - install
   - test
