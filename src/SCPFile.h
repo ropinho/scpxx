@@ -5,7 +5,7 @@
 #ifndef ORLIB_SCPFILE_H
 #define ORLIB_SCPFILE_H
 
-#include "../InstanceFile.h"
+#include "InstanceFile.h"
 
 class SCPFile : public InstanceFile {
 public:
