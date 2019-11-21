@@ -70,6 +70,13 @@ public:
         buffer.clear();
     }
 
+    /*
+     * Returns a reference to the vector of integers with all values
+     */
+    std::vector<int>& values() {
+        return vecOfInts;
+    }
+
 protected:
     std::vector<int> vecOfInts;
 };
