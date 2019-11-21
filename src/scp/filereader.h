@@ -22,11 +22,14 @@ namespace ORLib {
             // Destructor
             ~FileReader() {};
 
-            /** Gets a string and separe through a separator __sep and returns into a
-             * std::vector<std::string> */
+            /** Gets a string and separe through a separator _sep and returns into a
+             * vector<string> */
             std::vector<int> split(std::string _str, char _sep) {
-                std::vector<std::string> strs;
-                std::vector<int> ints;
+                using std::vector;
+                using std::string;
+
+                vector<string> strs;
+                vector<int> ints;
             
                 int begin = 0;
                 for (int i=0 ; i < _str.size() ; i++) {
