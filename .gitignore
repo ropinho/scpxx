@@ -1,5 +1,10 @@
 # Ignored files
 
+# Files for testing
+foo*.cpp
+bar*.cpp
+t-*.cpp
+
 # Object and precompiled files
 *.[a|o]
 
