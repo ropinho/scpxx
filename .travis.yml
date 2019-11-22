@@ -1,16 +1,8 @@
 language: cpp
 compiler: gcc
 
-notifications:
-	email: false
-
-branches:
-  only:
-    - master
-    - dev
-
-  - install
 stages:
+  - install
   - test
 
 addons:

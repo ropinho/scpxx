@@ -1,6 +1,4 @@
-# ORLib
-
-[![build](https://travis-ci.org/pinho/orlib.svg?branch=master)](https://travis-ci.org/pinho/orlib)
+# ORLib [![build](https://travis-ci.org/pinho/orlib.svg?branch=master)](https://travis-ci.org/pinho/orlib)
 
 A simple C++ library for reading computer science problems instances made
 available in [OR-Library](http://people.brunel.ac.uk/~mastjjb/jeb/info.html).
@@ -46,30 +44,25 @@ Example using matrix class for set covering problem:
 
 ```c++
 #include <iostream>
-#include <orlib/scp/matrix.h>
-
-using namespace ORLib;
+#include <orlib/SCPFile.h>
 
 int main() {
-    scp::Matrix matrix(5,5);
+    SCPFile file("scp42.txt");
 
-    for (int i = 0; i < matrix.num_rows(); i++) {
-        for (int j = 0; j < matrix.num_columns(); j++)
-            std::cout << matrix[i][j] << " ";
-        std::cout << std::endl;
-    }
+    // Read all numbers in file and copy to a vector
+    file.bufferize();
+
+    // Get the vector with all numbers
+    std::vector<int> vec = file.values();
+
+    std::cout << "Numero de valores: " << vec.size() << std::endl;
+
+    for (int i = 0; i < vec.size(); i++)
+	    std::cout << vec[i] << " ";
+    std::cout << std::endl;
 
     return 0;
 }
-```
-
-`[Out]`
-```
-0 0 0 0 0 
-0 0 0 0 0 
-0 0 0 0 0 
-0 0 0 0 0 
-0 0 0 0 0 
 ```
 
 ## License
