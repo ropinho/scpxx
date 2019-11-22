@@ -6,7 +6,7 @@ A simple C++ library for reading computer science problems instances made
 available in [OR-Library](http://people.brunel.ac.uk/~mastjjb/jeb/info.html).
 
 
-## Installing
+## Installation
 
 The installation require CMake to generate build files of the library.
 
@@ -40,7 +40,7 @@ that can be readed here are:
 - [ ] Travelling Salesman Problem (TSP)
 - [ ] Steiner forest
 
-## Usage example
+## Usage
 
 Example using matrix class for set covering problem:
 

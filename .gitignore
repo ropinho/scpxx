@@ -1,5 +1,8 @@
 # Ignored files
 
+# CMake
+cmake-build-debug
+
 # Object and precompiled files
 *.[a|o]
 
