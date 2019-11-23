@@ -15,10 +15,16 @@ t-*.cpp
 *.out
 *.exe
 
-# Test directory
-test/*.o
-
-# Vscode 
-*.vscode/*
+# Auxiliar directories
 build/
 data/
+
+# Files in test directory
+test/*.o
+
+# VSCode
+*.vscode/*
+
+# CLion
+.idea/
+*/.idea/
