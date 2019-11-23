@@ -21,6 +21,8 @@ data/
 
 # Files in test directory
 test/*.o
+test/run-tests
+test/run-all-tests
 
 # VSCode
 *.vscode/*

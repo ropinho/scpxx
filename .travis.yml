@@ -26,5 +26,5 @@ jobs:
       script:
         - cd test
         - g++ -std=c++11 -c main.cpp test*.cpp
-        - g++ -std=c++11 main.o test*.o -o run-tests
-        - ./run-tests
+        - g++ -std=c++11 main.o test*.o -o run-all-tests
+        - ./run-all-tests

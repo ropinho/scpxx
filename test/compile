@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# Compile all tests in test directory
+# by pinho
+#
+
+g++ -c main.cpp test*.cpp
+g++ main.o test*.o -o run-tests
