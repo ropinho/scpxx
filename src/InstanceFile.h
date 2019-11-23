@@ -12,6 +12,7 @@
 
 class InstanceFile : protected std::ifstream {
 public:
+    using std::ifstream::is_open;
     /*
      * Default Constructor
      * inherit from "input file stream"
