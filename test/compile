@@ -2,7 +2,10 @@
 #
 # Compile all tests in test directory
 # by pinho
+# -- ronaldppinho@gmail.com
 #
-
 g++ -c main.cpp test*.cpp
 g++ main.o test*.o -o run-tests
+
+# Remove all objects (.o) files
+rm *.o

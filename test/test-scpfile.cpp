@@ -14,10 +14,14 @@ TEST_SUITE("SCP Files" * doctest::description("Testing files of Set Covering Pro
     using std::vector;
 
     TEST_CASE("Instantiation") {
-        SCPFile file("files/scp41.txt");
-        CHECK_EQ(file.is_open(), true);
+        SUBCASE("Open file") {
+            SCPFile file("files/scp41.txt");
+            CHECK_EQ(file.is_open(), true);
+        }
 
-        DOCTEST_CHECK_THROWS_WITH(SCPFile("scp41.txt"), "SCPFile not opened.");
+        SUBCASE("Not Open file") {
+            DOCTEST_CHECK_THROWS_WITH(SCPFile("scp41.txt"), "SCPFile not opened.");
+        }
     }
 
     TEST_CASE("Buffer values") {
@@ -25,9 +29,11 @@ TEST_SUITE("SCP Files" * doctest::description("Testing files of Set Covering Pro
         file.bufferize();
 
         vector<int> vec = file.values();
-        CHECK( vec[0] == 200 );
-        CHECK( vec[1] == 1000 );
-        CHECK( vec.size() == 5211 );
-    }
 
+        SUBCASE("Vector values") {
+            CHECK_EQ(vec[0], 200);
+            CHECK_EQ(vec[1], 1000);
+            CHECK_EQ(vec.size(), 5211);
+        }
+    }
 }
