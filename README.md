@@ -1,4 +1,4 @@
-# ORLib [![build](https://travis-ci.org/pinho/orlib.svg?branch=master)](https://travis-ci.org/pinho/orlib) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a39d4717f47c480482a1edfb93f39a05)](https://www.codacy.com/manual/ronaldpnh/orlib?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pinho/orlib&amp;utm_campaign=Badge_Grade)
+# ORLib [![build](https://travis-ci.org/pinho/orlib.svg?branch=master)](https://travis-ci.org/pinho/orlib) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a39d4717f47c480482a1edfb93f39a05)](https://www.codacy.com/manual/ronaldpnh/orlib?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pinho/orlib&amp;utm_campaign=Badge_Grade) 
 
 A simple C++ library for reading computer science problems instances made
 available in [OR-Library](http://people.brunel.ac.uk/~mastjjb/jeb/info.html).
@@ -42,12 +42,12 @@ that can be readed here are:
 
 Example using matrix class for set covering problem:
 
-```c++
+```cpp
 #include <iostream>
 #include <orlib/scp.h>
 
 int main() {
-    SCPFile file("scp42.txt");
+    SCPFile file("../scp41.txt");
 
     // Read all numbers in file and copy to a vector
     file.bufferize();
@@ -55,14 +55,15 @@ int main() {
     // Get the vector with all numbers
     std::vector<int> vec = file.values();
 
-    std::cout << "Numero de valores: " << vec.size() << std::endl;
+    std::cout << "Number of readed values: " << vec.size() << std::endl;
 
-    for (int i = 0; i < vec.size(); i++)
-	    std::cout << vec[i] << " ";
-    std::cout << std::endl;
+    auto matrix = file.generate_matrix();
+    std::cout << matrix.num_rows() << " linhas e "
+              << matrix.num_columns() << " colunas.\n";
 
     return 0;
 }
+
 ```
 
 ## License
