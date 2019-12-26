@@ -5,7 +5,7 @@
 #ifndef ORLIB_SCP_H
 #define ORLIB_SCP_H
 
-#include "Matrix.h"
+#include "scp/Matrix.h"
 #include "SCPFile.h"
 
 #endif //ORLIB_SCP_H

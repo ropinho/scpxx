@@ -55,11 +55,19 @@ int main() {
     // Get the vector with all numbers
     std::vector<int> vec = file.values();
 
-    std::cout << "Number of readed values: " << vec.size() << std::endl;
+    std::cout << "Numero de valores: " << vec.size() << std::endl;
 
     auto matrix = file.generate_matrix();
     std::cout << matrix.num_rows() << " linhas e "
               << matrix.num_columns() << " colunas.\n";
+
+	// Show some rows and columns from matrix
+	for (int r=0; r < 8; r++) {
+		for (int k=0; k < 10; k++)
+			std::cout << matrix[r][k] << " ";
+		std::cout << ". . ." << std::endl;
+	}
+	std::cout << ". . . . . . . . . . " << std::endl;
 
     return 0;
 }
