@@ -23,44 +23,22 @@ SOFTWARE.
 */
 
 #include "doctest/doctest.h"
-#include "../src/SCPFile.h"
+#include "../src/Matrix.h"
 
-#include <vector>
-#include <exception>
+TEST_SUITE("Matrix class") {
 
-TEST_SUITE("SCP Files" * doctest::description("Testing files of Set Covering Problem instances")) {
-    using std::vector;
-
-    TEST_CASE("Instantiate SCPFile") {
-        SUBCASE("Open file") {
-            SCPFile file("../instances/scp41.txt");
-            CHECK_EQ(file.is_open(), true);
-        }
-
-        SUBCASE("Not Open file") {
-            CHECK_THROWS_WITH(SCPFile("scp41.txt"), "Impossible open the file scp41.txt");
-        }
-
-        SUBCASE("Catching Not Open Exception") {
-            try {
-                SCPFile f("scp40.txt");
-            } catch(std::exception& e) {
-                std::string msg = e.what();
-                CHECK(msg == "Impossible open the file scp40.txt");
-            }
+    TEST_CASE("Instantiate Matrix") {
+        Matrix m1, m2(9, 23), m3(0, 2), m4(12, 0);
+        SUBCASE("Shape") {
+            CHECK(m1.num_rows() == 0);
+            CHECK(m1.num_columns() == 0);  // m1
+            CHECK(m2.num_rows() == 9);
+            CHECK(m2.num_columns() == 23); // m2
+            CHECK(m3.num_rows() == 0);
+            CHECK(m3.num_columns() == 2);  // m3
+            CHECK(m4.num_rows() == 12);
+            CHECK(m4.num_columns() == 0); // m4
         }
     }
 
-    TEST_CASE("Buffer values") {
-        SCPFile file("files/scp41.txt");
-        file.bufferize();
-
-        vector<int> vec = file.values();
-
-        SUBCASE("Vector values") {
-            CHECK_EQ(vec[0], 200);
-            CHECK_EQ(vec[1], 1000);
-            CHECK_EQ(vec.size(), 5211);
-        }
-    }
 }
