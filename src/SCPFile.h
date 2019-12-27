@@ -6,7 +6,7 @@
 #define ORLIB_SCPFILE_H
 
 #include "InstanceFile.h"
-#include "scp/Matrix.h"
+#include "Matrix.h"
 
 class SCPFile : public InstanceFile {
 public:

@@ -1,4 +1,5 @@
-[![build](https://travis-ci.org/pinho/orlib.svg?branch=master)](https://travis-ci.org/pinho/orlib) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a39d4717f47c480482a1edfb93f39a05)](https://www.codacy.com/manual/ronaldpnh/orlib?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pinho/orlib&amp;utm_campaign=Badge_Grade) 
+[![build](https://travis-ci.org/pinho/orlib.svg?branch=master)](https://travis-ci.org/pinho/orlib) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a39d4717f47c480482a1edfb93f39a05)](https://www.codacy.com/manual/ronaldpnh/orlib?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pinho/orlib&amp;utm_campaign=Badge_Grade)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) 
 
 # ORLib 
 A simple C++ library for reading computer science problems instances made
@@ -33,10 +34,6 @@ Following problems existing in
 that can be readed here are:
 
 - [X] Set covering problem (SCP)
-- [ ] Knapsacking Problem
-- [ ] Multidimensional Knapsack problem
-- [ ] Travelling Salesman Problem (TSP)
-- [ ] Steiner forest
 
 ## Usage
 
@@ -59,8 +56,8 @@ int main() {
     // The method generate_matrix build the matrix object
     auto matrix = file.generate_matrix();
 
-    std::cout << matrix.num_rows() << " linhas\n";
-    std::cout << matrix.num_columns() << " colunas\n";
+    std::cout << matrix.num_rows() << " rows\n";
+    std::cout << matrix.num_columns() << " columns\n";
     return 0;
 }
 

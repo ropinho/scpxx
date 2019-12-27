@@ -1,0 +1,47 @@
+To install the library in your computer, you should compile it from source
+code. Make sure that you is in the root directory of this repo and...
+
+Create a directory for build files. This step is just not to "dirty" the root
+directory. Types:
+
+$ mkdir build && cd build
+
+This project uses CMake for building. Uses the config in CMakeLists.txt placed
+in root directory...
+
+$ cmake ..
+
+finally, to copy the headers to default installation folder in your computer
+uses make install (this step requires superuser permission).
+
+# make install
+or
+$ sudo make install
+
+The headers will be copied to /usr/local/include/ on your Linux.
+To choose the installation directory (where you want to copy the headers), use
+the flag -DCMAKE_INSTALL_PREFIX:PATH=/folder/to/copy/headers/ in CMake step.
+
+###############################################################################
+This library ORLib is licensed under the
+MIT License
+
+Copyright (c) 2019 Ronaldd Pinho
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
