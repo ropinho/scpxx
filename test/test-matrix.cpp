@@ -28,7 +28,7 @@ SOFTWARE.
 TEST_SUITE("Matrix class") {
 
     TEST_CASE("Instantiate Matrix") {
-        Matrix m1, m2(9, 23), m3(0, 2), m4(12, 0);
+        scpxx::Matrix m1, m2(9, 23), m3(0, 2), m4(12, 0);
         SUBCASE("Shape") {
             CHECK(m1.num_rows() == 0);
             CHECK(m1.num_columns() == 0);  // m1

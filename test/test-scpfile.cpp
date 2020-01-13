@@ -33,17 +33,17 @@ TEST_SUITE("SCP Files" * doctest::description("Testing files of Set Covering Pro
 
     TEST_CASE("Instantiate SCPFile") {
         SUBCASE("Open file") {
-            SCPFile file("../instances/scp41.txt");
+            scpxx::SCPFile file("../instances/scp41.txt");
             CHECK_EQ(file.is_open(), true);
         }
 
         SUBCASE("Not Open file") {
-            CHECK_THROWS_WITH(SCPFile("scp41.txt"), "Impossible open the file scp41.txt");
+            CHECK_THROWS_WITH(scpxx::SCPFile("scp41.txt"), "Impossible open the file scp41.txt");
         }
 
         SUBCASE("Catching Not Open Exception") {
             try {
-                SCPFile f("scp40.txt");
+                scpxx::SCPFile f("scp40.txt");
             } catch(std::exception& e) {
                 std::string msg = e.what();
                 CHECK(msg == "Impossible open the file scp40.txt");
@@ -52,7 +52,7 @@ TEST_SUITE("SCP Files" * doctest::description("Testing files of Set Covering Pro
     }
 
     TEST_CASE("Buffer values") {
-        SCPFile file("files/scp41.txt");
+        scpxx::SCPFile file("files/scp41.txt");
         file.bufferize();
 
         vector<int> vec = file.values();
