@@ -25,7 +25,7 @@ $ cmake ..
 $ sudo make install
 ```
 
-By default, the files are placed in `/usr/local/include/orlib`.
+By default, the files are placed in `/usr/local/include/scpxx/`.
 
 
 ## List of problems
@@ -42,7 +42,9 @@ Example using matrix class for set covering problem:
 
 ```cpp
 #include <iostream>
-#include <orlib/scp.h>
+#include <scpxx/scp.h>
+
+using namespace scpxx;
 
 int main() {
     SCPFile file("../scp41.txt");

@@ -28,13 +28,17 @@ SOFTWARE.
 #include <string>
 #include <exception>
 
-struct FileNotOpenException : public std::runtime_error {
-    FileNotOpenException(const std::string filename)
-     : std::runtime_error("Impossible open the file " + filename),
-       name(filename) {}
+namespace scpxx {
 
-protected:
-    std::string name;
-};
+    struct FileNotOpenException : public std::runtime_error {
+        FileNotOpenException(const std::string filename)
+         : std::runtime_error("Impossible open the file " + filename),
+           name(filename) {}
+
+    protected:
+        std::string name;
+    };
+
+}
 
 #endif //ORLIB_EXCEPTION_H
