@@ -1,6 +1,6 @@
 # SCPxx
 
-[![build](https://travis-ci.org/pinho/orlib.svg?branch=master)](https://travis-ci.org/pinho/orlib) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a39d4717f47c480482a1edfb93f39a05)](https://www.codacy.com/manual/ronaldpnh/orlib?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pinho/orlib&amp;utm_campaign=Badge_Grade)
+[![build](https://travis-ci.org/pinho/orlib.svg?branch=master)](https://travis-ci.org/pinho/scpxx) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a39d4717f47c480482a1edfb93f39a05)](https://www.codacy.com/manual/ronaldpnh/orlib?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pinho/orlib&amp;utm_campaign=Badge_Grade)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT) 
 
 A simple C++ library for reading Set Covering Problem (SCP) instances made
