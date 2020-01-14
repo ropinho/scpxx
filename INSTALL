@@ -23,7 +23,7 @@ To choose the installation directory (where you want to copy the headers), use
 the flag -DCMAKE_INSTALL_PREFIX:PATH=/folder/to/copy/headers/ in CMake step.
 
 ###############################################################################
-This library ORLib is licensed under the
+This library SCPxx is licensed under the
 MIT License
 
 Copyright (c) 2019 Ronaldd Pinho
