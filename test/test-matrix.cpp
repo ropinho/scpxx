@@ -23,7 +23,7 @@ SOFTWARE.
 */
 
 #include "doctest/doctest.h"
-#include "../src/Matrix.h"
+#include "../include/scpxx/Matrix.h"
 
 TEST_SUITE("Matrix class") {
 

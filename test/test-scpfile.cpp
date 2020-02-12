@@ -23,7 +23,7 @@ SOFTWARE.
 */
 
 #include "doctest/doctest.h"
-#include "../src/SCPFile.h"
+#include "../include/scpxx/SCPFile.h"
 
 #include <vector>
 #include <exception>
