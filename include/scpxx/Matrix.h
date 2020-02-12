@@ -22,8 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#ifndef MATRIX_HPP
-#define MATRIX_HPP
+#ifndef SCPXX_MATRIX_HPP
+#define SCPXX_MATRIX_HPP
 
 #include <iostream>
 #include <vector>
@@ -126,4 +126,4 @@ namespace scpxx {
 
 } // end of namespace scpxx
 
-#endif
+#endif//SCPXX_MATRIX_H

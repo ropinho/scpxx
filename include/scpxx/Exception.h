@@ -22,8 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#ifndef ORLIB_EXCEPTION_H
-#define ORLIB_EXCEPTION_H
+#ifndef SCPXX_EXCEPTION_H
+#define SCPXX_EXCEPTION_H
 
 #include <string>
 #include <exception>
@@ -41,4 +41,4 @@ namespace scpxx {
 
 }
 
-#endif //ORLIB_EXCEPTION_H
+#endif //SCPXX_EXCEPTION_H

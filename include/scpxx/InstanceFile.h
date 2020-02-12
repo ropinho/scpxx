@@ -22,8 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#ifndef ORLIB_INSTANCEFILE_H
-#define ORLIB_INSTANCEFILE_H
+#ifndef SCPXX_INSTANCEFILE_H
+#define SCPXX_INSTANCEFILE_H
 
 #include <fstream>
 #include <string>
@@ -108,4 +108,4 @@ namespace scpxx {
 } // end of namespace scpxx
 
 
-#endif //ORLIB_INSTANCEFILE_H
+#endif //SCPXX_INSTANCEFILE_H

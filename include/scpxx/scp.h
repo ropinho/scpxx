@@ -22,10 +22,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#ifndef ORLIB_SCP_H
-#define ORLIB_SCP_H
+#ifndef SCPXX_SCP_H
+#define SCPXX_SCP_H
 
 #include "Matrix.h"
 #include "SCPFile.h"
 
-#endif //ORLIB_SCP_H
+#endif //SCPXX_SCP_H

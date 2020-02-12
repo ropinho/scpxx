@@ -22,8 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
-#ifndef ORLIB_SCPFILE_H
-#define ORLIB_SCPFILE_H
+#ifndef SCPXX_SCPFILE_H
+#define SCPXX_SCPFILE_H
 
 #include "InstanceFile.h"
 #include "Matrix.h"
@@ -79,4 +79,4 @@ namespace scpxx {
 
 } // end of namespace scpxx
 
-#endif //ORLIB_SCPFILE_H
+#endif //SCPXX_SCPFILE_H
