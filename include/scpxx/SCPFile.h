@@ -31,7 +31,7 @@ SOFTWARE.
 
 namespace scpxx {
 
-    class SCPFile : public InstanceFile {
+    class SCPFile : public InstanceFile<int> {
     public:
         /*
          * Default constructor
@@ -46,22 +46,22 @@ namespace scpxx {
         ~SCPFile() {}
 
         Matrix generate_matrix() {
-            int nRows = this->vecOfInts[0];
-            int nColumns = this->vecOfInts[1];
+            int nRows = this->vecOfvalues[0];
+            int nColumns = this->vecOfvalues[1];
             std::vector<int> costs_vector;
             std::vector<int> columnsCover;
 
             int index = 2;
             for (; index < nColumns+2; index++)
-                costs_vector.push_back(this->vecOfInts[index]);
+                costs_vector.push_back(this->vecOfvalues[index]);
             index = nColumns+2;
 
             Matrix m(nRows, nColumns);
             int rowIndex = 0;
             while (rowIndex < nRows) {
-                int endList = index + vecOfInts[index];
+                int endList = index + vecOfvalues[index];
                 for (int i = index+1; i <= endList; i++) {
-                    columnsCover.push_back( vecOfInts[i] );
+                    columnsCover.push_back( vecOfvalues[i] );
                     index = i;
                 }
                 //std::cout << rowIndex << std::endl;
@@ -70,7 +70,6 @@ namespace scpxx {
                 rowIndex++;
                 index++;
             }
-
             m.costs(costs_vector);
             costs_vector.clear();
             return m;

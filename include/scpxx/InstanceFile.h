@@ -33,6 +33,7 @@ SOFTWARE.
 
 namespace scpxx {
 
+    template <typename T>
     class InstanceFile : protected std::ifstream {
     public:
         using std::ifstream::is_open;
@@ -51,12 +52,12 @@ namespace scpxx {
          * Gets a string with numbers and split through a separator _sep and
          * returns into a vector<int>
          */
-        std::vector<int> split(std::string _str, char _sep) {
+        std::vector<T> split(std::string _str, char _sep) {
             using std::vector;
             using std::string;
 
             vector<string> strs;
-            vector<int> ints;
+            vector<T> values;
 
             int begin = 0;
             for (int i=0 ; i < _str.size() ; i++) {
@@ -69,11 +70,11 @@ namespace scpxx {
 
             for (int i=0; i < strs.size(); i++) {
                 if ((strs[i] != "") and (strs[i] != " ")) {
-                    ints.push_back( std::stoi(strs[i]) );
+                    values.push_back( std::stoi(strs[i]) );
                 }
             }
 
-            return ints;
+            return values;
         };
 
         /*
@@ -90,19 +91,19 @@ namespace scpxx {
                 buffer << line;
             }
 
-            vecOfInts = split(buffer.str(), ' ');
+            vecOfvalues = split(buffer.str(), ' ');
             buffer.clear();
         }
 
         /*
          * Returns a reference to the vector of integers with all values
          */
-        std::vector<int>& values() {
-            return vecOfInts;
+        std::vector<T>& values() {
+            return vecOfvalues;
         }
 
     protected:
-        std::vector<int> vecOfInts;
+        std::vector<T> vecOfvalues;
     };
 
 } // end of namespace scpxx
