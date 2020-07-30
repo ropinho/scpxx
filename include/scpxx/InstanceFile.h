@@ -70,7 +70,7 @@ namespace scpxx {
 
             for (int i=0; i < strs.size(); i++) {
                 if ((strs[i] != "") and (strs[i] != " ")) {
-                    values.push_back( std::stoi(strs[i]) );
+                    values.push_back( std::stof(strs[i]) );
                 }
             }
 
